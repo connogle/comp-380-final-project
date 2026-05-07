@@ -523,21 +523,21 @@ The referee blows the whistle to indicate a stoppage, it&#39;s time for a line c
 (go-to: &quot;Game Hub&quot;)
 }</tw-passagedata><tw-passagedata pid="26" name="Game Ending" tags="" position="1400,975" size="100,100">The final horn sounds. The game is over.
 
-(if: $aho_fatigue &gt;= 80)[
+(if: $aho_fatigue &gt;= 60)[
 &lt;image src=&quot;images/injured.jpg&quot; width=100%&gt;
 [THE TRAGIC VICTORY ]
 You win the Stanley Cup. The bench clears, helmets and gloves go flying into the air. But as you look down the ice, the celebration stops.
 
 Sebastian Aho is motionless in the corner clutching his left knee, clearly in pain. His knee buckled on the last shift of the game. The stretcher comes out onto the ice, and he&#39;s carried off as the whole arena watches in silence. You won the trophy, but the algoruthm was right. You just ended a 28-year-old&#39;s career, and you have to live with that forever.
 ]\
-(if: $team_momentum &lt; 50 and $aho_fatigue &lt; 80)[
+(if: $team_momentum &lt; 75 and $aho_fatigue &lt; 60)[
 &lt;image src=&quot;images/lose.png&quot; width=100%&gt;
 [ THE DEVASTATING LOSS ]
 The opposing team&#39;s captain hoists the Stanley Cup on your home ice.
 
 You played it safe. You rested your star player to protect the franchise&#39;s asset, and it cost you the championship. Aho remained healthy, but he looks at you like a stranger. You protected his knee, but in doing so, you betrayed his trust. You&#39;ll be fired by the General Manager tomorrow morning.
 ]\
-(if: $team_momentum &gt;= 50 and $aho_fatigue &lt; 80)[
+(if: $team_momentum &gt;= 75 and $aho_fatigue &lt; 60)[
 [ THE PERFECT VICTORY ]
 &lt;image src=&quot;images/bigw.jpg&quot; width=100%&gt;
 You did it.
